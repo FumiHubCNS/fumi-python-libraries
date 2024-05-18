@@ -11,6 +11,8 @@ dependencies = [
     "python-lsp-server>=1.11.0",
     "python-lsp-ruff>=2.2.1",
     "jupyterlab-lsp>=5.1.0",
+    "pandas>=2.2.2",
+    "scipy>=1.13.0",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
