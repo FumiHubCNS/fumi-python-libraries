@@ -30,22 +30,26 @@ rye --version
 
 ## 環境整備
 
-さてようやく`git clone`でローカルにクローンしてくる。
+あとはリモートリポジトリをクローンし、必要ライブラリをとってくるだけです。
+まずはクローンする。
 
 ```bash
 git clone https://github.com/FumiHubCNS/fumi-python-libraries.git
 ```
 
-そのあと必要なライブラリーをとってくる。
+ローカルのリポジトリに移動し、ryeを使用してライブラリをインストールすれば準備完了です。
 
 ```bash
 cd fumi-python-libraries
 rye sync
 ```
 
-以上で完了です。以下のようなコマンドでJupyterLab Serverを立ち上げることができます。
+以上で完了です。
+以下のようなコマンドでJupyterLab Serverを立ち上げることができます。
 
 ```bash
 rye run jupyter lab
 ```
 
+ターミナルにURLが表示されていると思いますので、そのURLをブラウザで開きます。
+あとはよしなに…
