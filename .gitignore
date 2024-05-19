@@ -4,6 +4,7 @@
 .ipynb_checkpoints
 .venv
 .virtual_documents
+.tree_output
 __pycache__
 private-doxygen
 private-notebook
