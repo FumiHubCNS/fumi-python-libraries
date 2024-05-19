@@ -1,1 +1,8 @@
+.
+.. 
+.ipynb_checkpoints
 .venv
+.virtual_documents
+__pycache__
+private-doxygen
+private-notebook
