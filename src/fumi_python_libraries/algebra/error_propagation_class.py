@@ -1,4 +1,5 @@
 import sympy
+import numpy
 from IPython.display import Math
 from IPython.display import display
 import copy
@@ -54,6 +55,9 @@ class ErrorPropagationClass( BasicAlgebraicCalculationClass ):
     self.dfdx_symbol = []
     if self.original_function is None:
       self.original_function = self.right_hand_side
+    elif self.original_function != self.right_hand_side:
+        self.original_function = self.right_hand_side
+        
     if dump_flag:
       if not self.latex_paste_mode:
         display( Math( r'{\delta}f=\sqrt{\sum_{i=0}^{n} \left( \frac{{\partial} f}{{\partial} x_i} {\delta}x_i \right)^2}') )

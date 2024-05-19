@@ -1,4 +1,5 @@
 import sympy
+import numpy 
 from IPython.display import Math
 from IPython.display import display
 import copy
@@ -101,18 +102,25 @@ class BasicAlgebraicCalculationClass:
     self.set_variable_symbols( input_variable_list )
     return self.created_variable_symbols
 
-  def assign_values(self, symbol, values, round_digits=None ):
+  def assign_values(self, symbol, values,round_digits=None, update_flag=False ):
     '''
     Assign and round variables.
       symbol : list of slgebaric variables
       values : list of numerical variables
-      round_digits : number of digits
+      round_digits : number of digits(default: noround)
+      update_flag : flag for updating original function(default: noupdate)
     '''
     self.variable_values_args = sympy.lambdify( symbol, self.right_hand_side, "numpy" )
     if round_digits is not None:
         for i in range( len( values ) ):
             values[i] = round( values[i], int(round_digits) )
     self.variable_values = self.variable_values_args( *values )
+
+    if update_flag:
+        if isinstance(self.variable_values, sympy.MatrixBase) or isinstance(self.variable_values, numpy.ndarray):
+            self.right_hand_side = sympy.Matrix( self.variable_values )
+        else:
+            self.right_hand_side = self.variable_values
 
   def get_variable_symbols(self):
     '''
@@ -135,13 +143,22 @@ class BasicAlgebraicCalculationClass:
     (+1.0 and -1.0 when rounding with zero digits forces the assignment of +1 and -1.)
     '''
     replacements = {}
-    for n in self.right_hand_side.atoms( sympy.Number ):
-      val = round( n, round_digits )
-      if abs( round( val, 0 ) ) == 1:
-        replacements[n] = int( round( val, 0 ) )
-      else:
-        replacements[n] = round( n, round_digits )
-    self.right_hand_side = self.right_hand_side.xreplace( replacements )
+
+    if isinstance(self.right_hand_side, sympy.MatrixBase):
+        rounded_matrix = self.right_hand_side.applyfunc(lambda x: round(x, round_digits))
+        self.right_hand_side = rounded_matrix
+    else:
+        if isinstance(self.right_hand_side, (sympy.Basic, sympy.Expr)):
+            for n in self.right_hand_side.atoms( sympy.Number ):
+              val = round( n, round_digits )
+              if abs( round( val, 0 ) ) == 1:
+                replacements[n] = int( round( val, 0 ) )
+              else:
+                replacements[n] = round( n, round_digits )
+            self.right_hand_side = self.right_hand_side.xreplace( replacements )
+        else:
+            self.right_hand_side = round( self.right_hand_side, round_digits )
+        
     return self.right_hand_side
 
   def create_martix_symbols(self, matrixsymbol, row, col, elementsymbol=None):
