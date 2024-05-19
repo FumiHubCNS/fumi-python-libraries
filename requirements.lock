@@ -274,6 +274,7 @@ referencing==0.35.1
     # via jsonschema-specifications
     # via jupyter-events
 requests==2.31.0
+    # via fumi-python-libraries
     # via jupyterlab-server
 rfc3339-validator==0.1.4
     # via jsonschema
