@@ -8,4 +8,4 @@
 __pycache__
 private-doxygen
 private-notebook
-*.pdf
+notebook/figs/*.pdf
