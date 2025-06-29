@@ -1,0 +1,26 @@
+var classfumi__python__libraries_1_1algebra_1_1basic__algebraic__calculation__class_1_1_basic_algebraic_calculation_class =
+[
+    [ "__init__", "classfumi__python__libraries_1_1algebra_1_1basic__algebraic__calculation__class_1_1_basic_algebraic_calculation_class.html#af673e1e0b7c88284b65e6f5d6c18edbb", null ],
+    [ "assign_values", "classfumi__python__libraries_1_1algebra_1_1basic__algebraic__calculation__class_1_1_basic_algebraic_calculation_class.html#a9df786a66de2ea6f431fceab1e12fd61", null ],
+    [ "copy_class", "classfumi__python__libraries_1_1algebra_1_1basic__algebraic__calculation__class_1_1_basic_algebraic_calculation_class.html#a79cf84981c58d1029d4af2b752465453", null ],
+    [ "create_martix_symbols", "classfumi__python__libraries_1_1algebra_1_1basic__algebraic__calculation__class_1_1_basic_algebraic_calculation_class.html#a7519ee56905ed199d76d5c2a6bb4e05d", null ],
+    [ "create_variables", "classfumi__python__libraries_1_1algebra_1_1basic__algebraic__calculation__class_1_1_basic_algebraic_calculation_class.html#ae08ca37d046f021f84dcd788ecfb8c47", null ],
+    [ "definite_integral", "classfumi__python__libraries_1_1algebra_1_1basic__algebraic__calculation__class_1_1_basic_algebraic_calculation_class.html#a3b8f72189c3270de4a4f0096ed282f7b", null ],
+    [ "differentiate", "classfumi__python__libraries_1_1algebra_1_1basic__algebraic__calculation__class_1_1_basic_algebraic_calculation_class.html#aa1921f1f899b951b3151917361f41f0c", null ],
+    [ "expand_formula", "classfumi__python__libraries_1_1algebra_1_1basic__algebraic__calculation__class_1_1_basic_algebraic_calculation_class.html#a964be8ac5449ac8822ef3f2216c5447b", null ],
+    [ "get_formula", "classfumi__python__libraries_1_1algebra_1_1basic__algebraic__calculation__class_1_1_basic_algebraic_calculation_class.html#a2049e23142e8d49c45e083acf96222e3", null ],
+    [ "get_left_hand_side", "classfumi__python__libraries_1_1algebra_1_1basic__algebraic__calculation__class_1_1_basic_algebraic_calculation_class.html#a1a6300d1b1ed1d61fc14c15b5103a11c", null ],
+    [ "get_matrix", "classfumi__python__libraries_1_1algebra_1_1basic__algebraic__calculation__class_1_1_basic_algebraic_calculation_class.html#a108b28e6e195a6d628a7356346cdf993", null ],
+    [ "get_right_hand_side", "classfumi__python__libraries_1_1algebra_1_1basic__algebraic__calculation__class_1_1_basic_algebraic_calculation_class.html#aee6e08122c4c1b71191dfeaafda0fce1", null ],
+    [ "get_variable_symbols", "classfumi__python__libraries_1_1algebra_1_1basic__algebraic__calculation__class_1_1_basic_algebraic_calculation_class.html#a277aad8fcd719a5635bcc1985f9338fb", null ],
+    [ "get_variable_values", "classfumi__python__libraries_1_1algebra_1_1basic__algebraic__calculation__class_1_1_basic_algebraic_calculation_class.html#ac6a60d519a599c2f6f5fe178a6ecb753", null ],
+    [ "indefinite_integral", "classfumi__python__libraries_1_1algebra_1_1basic__algebraic__calculation__class_1_1_basic_algebraic_calculation_class.html#a823448e6210b78eac8357820d52e1b41", null ],
+    [ "print_external_input", "classfumi__python__libraries_1_1algebra_1_1basic__algebraic__calculation__class_1_1_basic_algebraic_calculation_class.html#a6385990b5ef98593890bb8dc3f23b870", null ],
+    [ "print_formula", "classfumi__python__libraries_1_1algebra_1_1basic__algebraic__calculation__class_1_1_basic_algebraic_calculation_class.html#a9ca5b6fb0fbce026273a93b1c608e227", null ],
+    [ "round_right_hand_side", "classfumi__python__libraries_1_1algebra_1_1basic__algebraic__calculation__class_1_1_basic_algebraic_calculation_class.html#a3b5ac048e2cb88e0bb23d350c17b6d4c", null ],
+    [ "select_print_mode", "classfumi__python__libraries_1_1algebra_1_1basic__algebraic__calculation__class_1_1_basic_algebraic_calculation_class.html#a027a426a1a1703918c571e2c63739876", null ],
+    [ "set_formula", "classfumi__python__libraries_1_1algebra_1_1basic__algebraic__calculation__class_1_1_basic_algebraic_calculation_class.html#aeb6da2a53375b079bd0bec62e9f526f2", null ],
+    [ "set_left_hand_side", "classfumi__python__libraries_1_1algebra_1_1basic__algebraic__calculation__class_1_1_basic_algebraic_calculation_class.html#a84531eceedc00bad02b0a8e78052e56d", null ],
+    [ "set_right_hand_side", "classfumi__python__libraries_1_1algebra_1_1basic__algebraic__calculation__class_1_1_basic_algebraic_calculation_class.html#a526440593af549d400ed941faf1cdd85", null ],
+    [ "set_variable_symbols", "classfumi__python__libraries_1_1algebra_1_1basic__algebraic__calculation__class_1_1_basic_algebraic_calculation_class.html#ac3721360df5bfab16cef3549ffad5f68", null ]
+];
